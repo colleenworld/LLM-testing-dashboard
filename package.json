@@ -1,7 +1,7 @@
 {
   "name": "web-dashboard",
   "version": "0.1.0",
-  "homepage": "https://colleenworld.github.io/react-gh-pages",
+  "homepage": "https://colleenworld.github.io/LLM-testing-dashboard",
   "private": true,
   "type": "module",
   "scripts": {
