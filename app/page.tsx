@@ -33,15 +33,13 @@ export default function EvaluationDashboard() {
     async function fetchMetrics() {
       setIsLoading(true);
       try {
-        const apiEndpoint = process.env.NEXT_PUBLIC_API_URL;
-        const apiSecretToken = process.env.NEXT_PUBLIC_API_KEY;
+        const apiEndpoint = process.env.API_URL;
 
-        if (apiEndpoint && apiSecretToken) {
+        if (apiEndpoint) {
           const response = await fetch(`${apiEndpoint}?category=${encodeURIComponent(activeCategory)}`, {
             method: 'GET',
             headers: {
-              'Content-Type': 'application/json',
-              'X-Api-Key': apiSecretToken
+              'Content-Type': 'application/json'
             }
           })
 
